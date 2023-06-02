@@ -25,10 +25,7 @@ function App() {
   return (
     <div className="App">
       <div className="header__image__container">
-        <img
-          src="/src/assets/morty-siendo-atacado_1920x1080_xtrafondos.com.jpg"
-          alt=""
-        />
+        <img src="/src/assets/rickandmorty.png" alt="" />
       </div>
       {location ? <Location location={location} /> : <Loader />}
       <Input loadLocation={loadLocation} />
