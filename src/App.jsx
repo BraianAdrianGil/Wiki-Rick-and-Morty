@@ -24,9 +24,7 @@ function App() {
 
   return (
     <div className="App">
-      <div className="header__image__container">
-        <img src="../public/rickandmorty.png" alt="" />
-      </div>
+      <div className="header__image__container"></div>
       {location ? <Location location={location} /> : <Loader />}
       <Input loadLocation={loadLocation} />
       {location && location.residents.length > 0 ? (
