@@ -53,7 +53,6 @@ const Input = ({ loadLocation }) => {
           value={searchId}
           onChange={handleChange}
           placeholder=" Search from 1 to 126"
-          className="no__translate"
         />
         <button type="submit">Search</button>
       </form>
