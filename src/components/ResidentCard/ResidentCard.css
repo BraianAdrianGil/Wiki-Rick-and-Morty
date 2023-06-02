@@ -1,0 +1,192 @@
+.grid__residents {
+    width: 85%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+.resident__card__general__container{
+    margin-bottom: 1rem;
+    width: 100%;
+    max-width: 350px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #062226;
+}
+.resident__img__container{
+    width: 100%;
+}
+.resident__img__container img{
+    width: 100%;
+    height: 100%;
+}
+.resident__status__container{
+    position: absolute;
+    top: 18px;
+    left: 0px;
+    background-color: #062226;
+    height: 22px;
+    width: 100px;
+    border-radius: 0 8px 8px 0;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 400;
+}
+.resident__status__container div{
+    margin-left: 0.30rem;
+    margin-right: 0.30rem;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color:gray;
+}
+.resident__info__general__container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 5px 10px 5px 10px;
+}
+.resident__info__general__container h3{
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 0.20rem;
+    padding-bottom: 0.40rem;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.31);
+    text-transform: capitalize;
+}
+.resident__list__items{
+    padding: 10px 0 5px 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+.resident__list__items b{
+    font-size: 1rem;
+    color: gray;
+    margin-bottom: 0.10rem;
+}
+.resident__list__items li{
+    font-size: 1rem;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+}
+.resident__list__items li span::first-letter{
+    text-transform: capitalize;
+}
+.buttons__general__container{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    gap: 5px;
+}
+.dinamic__buttons__container{
+    width: 100%;
+    display: grid;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 4px;
+    grid-template-columns: repeat(auto-fit, minmax(20px,20px));
+}
+.dinamic__buttons{
+    border: none;
+    border-radius: 5px;
+    padding: 2px 0px;
+    text-align: center;
+    font-size: 12px;
+    background-color: #062226;
+    color: #0d6813a0;
+    font-weight: bold;
+    cursor: pointer;
+}
+.dinamic__buttons:hover{
+    transition: all 0.3s linear;
+    background-color:#0d3136;
+    color: rgb(44, 255, 7);
+}
+.secondary__buttons__general__container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.2rem;
+    margin-bottom: 1rem;
+}
+.next__previous__buttons__container{
+    display: flex;
+    gap: 5px;   
+}
+.previous__button,
+.next__button{
+    width: 57px;
+    height: 23px;
+    padding: 5px;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    background-color: #062226;
+    color: #0d6813;
+}
+.previous__button:hover,
+.next__button:hover{
+    transition: all 0.3s linear;
+    background-color:#0d3136;
+    color: rgb(44, 255, 7);
+}
+.select__container select{
+    width: 57px;
+    height: 23px;
+    padding: 5px 0;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    background-color: #062226;
+    color: #0d6813;
+    outline: none;
+}
+.select__container select:hover{
+    transition: all 0.3s linear;
+    background-color:#0d3136;
+    color: rgb(44, 255, 7);
+}
+/* MEDIA QUERIES ===================================== */
+@media screen and (min-width:500px){
+    .dinamic__buttons__container{
+        gap: 0.5rem;
+    }
+    .dinamic__buttons{
+        width: 22px;
+        aspect-ratio: 1;
+        font-size: 14px;
+    }
+}
+/* 1024PX============================================= */
+@media screen and (min-width:1024px){
+    .previous__button,
+    .next__button{
+        width: 62px;
+        height: 27px;
+        font-size: 13px;
+    }
+    .select__container select{
+        width: 62px;
+        height: 27px;
+        font-size: 13px;
+    }
+}
